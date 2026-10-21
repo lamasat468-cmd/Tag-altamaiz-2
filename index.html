@@ -13,6 +13,22 @@
 
   gtag('config', 'AW-18527247015');
 </script>
+  <!-- Event snippet for جهة اتصال conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18527247015/gWX9CKrgu6QdEKe1vYJF',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <meta name="description" content="مؤسسة تاج التميز للحفلات والمناسبات - أفضل أماكن تأجير لوازم الحفلات، تأجير كنب ملكي وثلاثي ومفرد، إيجار طاولات وكراسي، تأجير جلسات شعبية ومغربية وخارجية، خيام، قهوجيين وصبابين، مكيفات، سماعات، دفايات، سجاد خزامي، وعقود زينة بالدمام، الخبر، الظهران، القطيف، الأحساء، سيهات والجبيل." />
   <meta name="keywords" content="تأجير كنب الدمام, إيجار كنب الخبر, كنب للايجار الظهران, تأجير طاولات وكراسي القطيف, كراسي ملكي للايجار الأحساء, تأجير جلسات شعبية الجبيل, جلسات خارجية سيهات, تأجير خيام الدمام, قهوجيين وصبابين الشرقية, تأجير مكيفات صحراوي وفريون, تأجير سماعات ومكبرات صوت, تأجير دفايات للحفلات, تأجير سجاد خزامي وممرات, عقود لمبات وزينة للإيجار, أماكن تأجير لوازم حفلات ومناسبات بالمنطقة الشرقية, مؤسسة تاج التميز" />
   <meta name="robots" content="index, follow" />
